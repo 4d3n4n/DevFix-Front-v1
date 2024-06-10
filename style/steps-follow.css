@@ -1,0 +1,59 @@
+.steps-icons {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all ease-in-out 0.2s;
+}
+.steps-icons.show-steps {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.steps-icons .icon-container {
+    background: var(--primary-color);
+}
+
+.steps-icons .icon-container.checked {
+    background: none;
+}
+
+.steps-icons i {
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+}
+
+.steps-icons .icon-container:hover i {
+    color: var(--primary-color);
+    scale: 1;
+    cursor: not-allowed;
+}
+
+.steps-icons i.checked {
+    color: var(--secondary-color);
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    margin-right: -20px;
+}
+.steps-icons .icon-container:hover i.checked {
+    color: var(--secondary-color);
+    scale: 1;
+    cursor: not-allowed;
+}

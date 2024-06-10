@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFix</title>
+    
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- iPhone Retina Bookmark Icon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon-apple.png">
+    <!-- iPad Retina Bookmark Icon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon-apple.png">
+    <!-- iPhone X Retina Bookmark Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon-apple.png">
+    <!-- Apple Safari Pinned Tab Icon -->
+    <link rel="mask-icon" href="./img/favicon-apple.png" color="#fff">
+    <!-- IOS APP LAUNCH -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Food Focus">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-startup-image" href="./img/favicon-apple.png"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <!--CSS LINK-->
+    <link href="./style/reset.css" rel="stylesheet" type="text/css">
+    <link href="./style/base.css" rel="stylesheet" type="text/css">
+    <link href="./style/homepage-container.css" rel="stylesheet" type="text/css">
+    <link href="./style/brand-choise-container.css" rel="stylesheet" type="text/css">
+    <link href="./style/steps-follow.css" rel="stylesheet" type="text/css">
+    <link href="./style/q-a.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!--JS LINK-->
+    <script src="./assets/main.js" defer></script>
+    <script src="./assets/loading-page.js" defer></script>
+    <script src="./assets/homepage-q-a.js" defer></script>
+</head>
+
+<body>
+    <!-- BG -->
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg-image-container">
+        <img class="bg-image" src="./img/bg_desk.png" alt="">
+    </div>
+
+    <!-- Loading Page -->
+    <div class="loader">
+        <div class="loader-bg"></div>
+        <img src="./img/logo_black.png" alt="logo">
+        <div class="spinner"></div>
+    </div>
+
+    <section id="slide-top">
+        <div class="window-container">
+            <!-- BUTTON LOG IN -->
+            <div class="log-in-icon-container" id="log-in-icon-container">
+                <i class="fa fa-user log-in-icon show-icon" aria-hidden="true"></i>
+                <i class="fa fa-times log-in-close-icon" aria-hidden="true"></i>
+            </div>
+            <!-- SLIDE LOG IN -->
+            <div class="log-in-container">
+                <div class="input-container">
+                    <input type="email" class="email-log-in" placeholder="Email"/>
+                </div>
+                <div class="input-container">
+                    <input type="password" class="password-log-in" placeholder="Password"/>
+                </div>
+                <button type="submit">Re-bonjour !</button>
+            </div>
+
+            <div class="window">
+                <div class="upper-container">
+
+                    <div class="left-container">
+                        <div class="social-icons">
+                            <div class="icon-container"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                            <div class="icon-container"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                            <div class="icon-container"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="steps-icons">
+                            <div class="icon-container checked"><i class="fa fa-check checked" aria-hidden="true"></i></div>
+                            <div class="icon-container"><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="icon-container"><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="icon-container"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="right-container">
+                        <!-- HEADER -->
+                        <header>
+                            <img src="./img/logo_black.png" class="logo" alt="logo">
+                        </header>
+
+                        <!-- MAIN CONTENT -->
+                        <main>
+
+                            <!-- SECTiON HOMEPAGE -->
+                            <div class="homepage-container" id="slide1">
+                                <img class="smartphone-img" id="dynamicImage" src="./img/smartphone.png" alt="">
+                                <div class="text-container">
+                                    <h1><span>Réparez</span><br> en un <span>Clic</span></h1>
+                                    <p>
+                                        Rendez-nous visite pour des réparations mobiles rapides et fiables. Des écrans fissurés aux soucis de batterie, nos experts vous assurent une solution efficace pour tous vos appareils !
+                                    </p>
+                                </div>
+                                <div class="user-image-container">
+                                    <img class="users-img" src="./img/user_illustration.png" alt="">
+                                    <div class="review-container">
+                                        <h2 class="note">9/10</h2>
+                                        <div class="stars-container">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="start-container">
+                                    <a class="inner-circle" href="#slide2">
+                                        <i class="fa fa-angle-double-down start" aria-hidden="true"></i>
+                                    </a>
+                                    <svg width="180" height="180" viewBox="0 0 300 300" class="circle-text">
+                                        <path id="circlePath" d="M150,150 m-100,0 a 100,100 0 1,0 200,0 a 100,100 0 1,0 -200,0" fill="none" />
+                                    
+                                        <text>
+                                            <textPath class="text" xlink:href="#circlePath">
+                                                commencer • commencer • commencer • 
+                                            </textPath>
+                                        </text>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- SECTiON POURQUOI NOUS -->
+                            <div class="why-us-container" id="slide2">
+                                <h2>Pourquoi nous</h2>
+                                <div class="cards-container">
+                                    <img src="./img/question-mark.png" class="question" alt="question">
+                                    <div class="card left-card">
+                                        <div class="icon-container">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        </div>
+                                        <h3>Réparation rapide</h3>
+                                        <p>Nous comprenons l'urgence de retrouver votre appareil en parfait état. C'est pourquoi nous nous engageons
+                                            à réaliser les réparations les plus courantes en moins de 30 minutes, sans jamais compromettre la
+                                            qualité.</p>
+                                    </div>
+                                    <div class="card center-card">
+                                        <div class="icon-container">
+                                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                                        </div>
+                                        <h3>Reparation de qualité</h3>
+                                        <p>Nos techniciens expérimentés utilisent uniquement des pièces de haute qualité pour garantir que chaque
+                                            réparation répond à nos normes élevées. Faites confiance à notre expertise pour des réparations fiables
+                                            et durables.</p>
+                                    </div>
+                                    <div class="card right-card">
+                                        <div class="icon-container">
+                                            <i class="fa fa-money" aria-hidden="true"></i>
+                                        </div>
+                                        <h3>Meilleur prix</h3>
+                                        <p>Obtenez le meilleur rapport qualité-prix pour vos réparations mobiles. Nous vous proposons des tarifs
+                                            compétitifs et transparents, sans frais cachés, pour vous assurer une expérience client exceptionnelle à
+                                            un prix abordable.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- SECTiON AVIS -->
+                            <div class="reviews-container">
+                                <h2>Les avis de nos clients</h2>
+                                <p class="review-mention">ces avis proviennent de notre page google</p>
+                                <div class="reviews-cards-container">
+                                    <img src="./img/pencil.png" class="pencil" alt="pencil">
+                                    <div class="review-card">
+                                        <div class="user-container">
+                                            <h3>Adenan K.</h3>
+                                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="stars-container">
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                        </div>
+                                        <p>“J'ai fait réparer mon iPhone 11 Pro Max ici. Le service était rapide et le personnel était très
+                                            sympathique. Je recommande vivement ce magasin pour les réparations de téléphones.”
+                                        </p>
+                                    </div>
+                                    <div class="review-card">
+                                        <div class="user-container">
+                                            <h3>Adenan K.</h3>
+                                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="stars-container">
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                        </div>
+                                        <p>“J'ai fait réparer mon iPhone 11 Pro Max ici. Le service était rapide et le personnel était très
+                                            sympathique. Je recommande vivement ce magasin pour les réparations de téléphones.”
+                                        </p>
+                                    </div>
+                                    <div class="review-card">
+                                        <div class="user-container">
+                                            <h3>Adenan K.</h3>
+                                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="stars-container">
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                            <i class="fa fa-star star" aria-hidden="true"></i>
+                                        </div>
+                                        <p>“J'ai fait réparer mon iPhone 11 Pro Max ici. Le service était rapide et le personnel était très
+                                            sympathique. Je recommande vivement ce magasin pour les réparations de téléphones.”
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- SECTiON PROCEDÉ -->
+                            <div class="process-container"  id="slide-bottom">
+                                <h2>Réparation en 3 Pas</h2>
+                                <img src="./img/steps_man.png" class="steps_man" alt="steps_man">
+                                <div class="cards-container">
+                                    <div class="card">
+                                        <div class="icon-container">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                        </div>
+                                        <h3>Sélection Sur Mesure</h3>
+                                        <p>Choisissez le service adapté à votre besoin, avec une solution rapide et précise pour chaque problème.</p>
+                                    </div>
+                                    <div class="card center-card">
+                                        <div class="icon-container">
+                                            <i class="fa fa-eur" aria-hidden="true"></i>
+                                        </div>
+                                        <h3>Devis en un Clic</h3>
+                                        <p>Obtenez rapidement une estimation claire et sans engagement, simplifiant votre planification de réparation.</p>
+                                    </div>
+                                    <div class="card">
+                                        <div class="icon-container">
+                                            <i class="fa fa-flag" aria-hidden="true"></i>
+                                        </div>
+                                        <h3>Rapidité Garantie</h3>
+                                        <p>Profitez d'un service express sans compromettre la qualité, pour une réparation efficace et fiable.</p>
+                                    </div>
+                                </div>
+                                <p class="cta">Choisi la marque de ton téléphone pour commencer</p>
+                            </div>
+
+
+                            <!-- SECTION MARQUE -->
+                            <div class="brand-choice-container">
+                                <img src="./img/cta_line.png" class="cta-img" alt="cta">
+                                <div class="brand-logo-container">
+                                    <div class="apple">
+                                        <img src="./img/apple.png" alt="apple">
+                                    </div>
+                                </div>
+                                <div class="brand-logo-container">         
+                                    <div class="samsung">
+                                        <img src="./img/samsung.png" alt="samsung">
+                                    </div>
+                                </div>
+                                <img src="./img/button_icon.png" class="button_icon" alt="button_icon">
+                            </div>
+
+
+
+                            <!-- SECITON MODELE -->
+                            <!-- <div class="model-choice-container slide" id="slide3">
+
+                            </div> -->
+
+                            <!-- SECITON TYPE REPARATION -->
+                            <!-- <div class="repair-container slide" id="slide3">
+
+                            </div> -->
+
+                            <!-- SECITON DEVIS + INSCRIPTION -->
+                            <!-- <div class="sign-in-container slide" id="slide3">
+
+                            </div> -->
+
+
+
+                            <div class="q-a">
+                                <h2 class="q-a-title">FAQ</h2>
+                                <ul>
+                                    <li>
+                                        <div class="question-container">
+                                            <h4 class="question">L'application est gratuite ?</h4><i
+                                                class="fa-solid fa-circle-chevron-down"></i>
+                                        </div>
+                                        <div class="reponse-container">
+                                            <p class="reponse">Absolument ! C'est comme trouver une barre de chocolat dans votre poche, mais
+                                                sans les calories !</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="question-container">
+                                            <h4 class="question">Comment fonctionne Food Focus ?</h4><i
+                                                class="fa-solid fa-circle-chevron-down"></i>
+                                        </div>
+                                        <div class="reponse-container">
+                                            <p class="reponse">Comme un chef cuisinier pour vos données nutritionnelles ! Calculez vos
+                                                calories, notez vos aliments, et surveillez votre apport en lipides, protéines et glucides.
+                                                C'est comme avoir un nutritionniste de poche !</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="question-container">
+                                            <h4 class="question">Puis-je utiliser Food Focus pour perdre du poids ?</h4><i
+                                                class="fa-solid fa-circle-chevron-down"></i>
+                                        </div>
+                                        <div class="reponse-container">
+                                            <p class="reponse">Bien sûr ! 'Brand' est comme votre coach personnel pour dire "non" à cette
+                                                part supplémentaire de gâteau et "oui" à un mode de vie plus sain.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="question-container">
+                                            <h4 class="question">Food Focus est-elle adaptée aux sportifs ?</h4><i
+                                                class="fa-solid fa-circle-chevron-down"></i>
+                                        </div>
+                                        <div class="reponse-container">
+                                            <p class="reponse">out à fait ! Que vous soyez un sprinter ou un marathonien du canapé, 'brand'
+                                                vous aide à garder une longueur d'avance sur vos besoins nutritionnels.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="conditions-container">
+                        <a href="#">Contact</a>
+                        <a href="#">Conditions générales</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Politique relative aux cookies</a>
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Politique d'utilisation</a>
+                    </div>
+                    <div class="copyright-container">
+                        <img class="footer-logo" src="./img/logo.png" alt="logo">
+                        <p>developpé par
+                            <a href="https://exemple.xyz/" target="_blank">Aissam S.</a> |
+                            <a href="https://exemple.xyz/" target="_blank">Nadir H.</a> |
+                            <a href="https://exemple.xyz/" target="_blank">Antony B.</a> |
+                            <a href="https://adeanan.xyz/" target="_blank">Adenan k.</a></p> 
+                        <p class="copyright">© 2024 DevFix. Tous droits réservés.</p>
+                        <p>Illustration by <a href="https://icones8.fr/" target="_blank">Icons</a> 8 from <a href="https://icons8.com/illustrations" target="_blank">Ouch!</a></p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
